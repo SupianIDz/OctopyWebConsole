@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Octopy Web Console</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div class="code">
+			<div class="bar">
+				<div class="buttons">
+					<a href="javascript:;" class="close" title="Close"></a>
+					<a href="javascript:;" class="minimize" title="Minimize"></a>
+					<a href="javascript:;" class="enlarge" title="Enlarge"></a>
+				</div>
+			</div>
+			<div class="content">
+				<div class="output"></div>
+				<div class="input">
+					<font class="prefix"></font>
+					<input type="text">
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/code.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				app.code.prefix('root@octopy')
+        		   		.which('input');
+			});
+		</script>
+	</body>
+</html>
