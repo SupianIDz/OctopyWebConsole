@@ -28,8 +28,12 @@
 		<script type="text/javascript" src="assets/js/console.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				app.code.prefix('root@octopy')
-        		   		.which('input');
+				Octopy.console.run({
+					prefix   	 : 'root@octopy',
+					selector 	 : 'input',
+					controller	 : 'console.php',
+					autocomplete : 'autocomplete.json',
+				});
 			});
 		</script>
 	</body>

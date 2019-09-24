@@ -46,20 +46,25 @@ pre {
     margin-left: 0px;
 }
 
-input {
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
+.repeat, input {
     background-color: transparent;
     border: none;
     color: inherit;
-    margin-top: -1px;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
     margin-left: 96px;
+    margin-top: -1px;
+    outline: none;
     width: 90%;
 }
 
-input:hover {
-    border: none;
+input:focus {
+    outline: none;
+}
+
+.autocomplete .guess {
+    color: #a9a9a9;
 }
 
 .code > .bar {
