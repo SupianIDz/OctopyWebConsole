@@ -15,7 +15,7 @@
 require 'controller.php';
 
 $console = new Octopy\Console([
-	// todo
+    // todo
 ]);
 
-$console->execute($_REQUEST['command']); 
+$console->execute($_REQUEST['command']);

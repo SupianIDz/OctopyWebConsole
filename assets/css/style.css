@@ -1,0 +1,127 @@
+
+
+@font-face {
+    font-family: 'Iosevka';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Iosevka'), url('../font/Iosevka.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html, body {
+    background-color: #0C1021;
+    font-family: 'Iosevka';
+    font-size: 14px;
+}
+
+.code > .content {
+    color: #FFF;
+    margin-left: 6px;
+    margin-top: 30px;
+    overflow: hidden;
+    position: absolute;
+    width: 90%;
+}
+
+pre {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: normal;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.prefix {
+    color: #00bd9c;
+}
+
+.at {
+    color: #FFF;
+    font-size: 12px;
+}
+
+.code > .content > .input > .prefix {
+    position: absolute;
+    margin-left: 0px;
+}
+
+input {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    margin-top: -1px;
+    margin-left: 96px;
+    width: 90%;
+}
+
+input:hover {
+    border: none;
+}
+
+.code > .bar {
+    background: #0C1021;
+    border-bottom: 0;
+    border: 1px solid #0C1021;
+    height: 28px position:relative;
+}
+
+.code > .bar > .buttons {
+    float: left;
+    padding: 6px;
+    position: relative;
+    z-index: 1
+}
+
+.code > .bar > .buttons a {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.5em;
+    height: 15px;
+    line-height: 0.83333em margin:0 2px;
+    text-align: center;
+    text-decoration: none;
+    width: 15px;
+}
+
+.code > .bar > .buttons a i {
+    display: block;
+    font-size: 0.55556em;
+    height: 15px;
+    line-height: 1.5em text-align:center;
+    width: 100%;
+}
+
+.code > .bar > .buttons a.close {
+    background: #F25056;
+    color: #F25056
+}
+
+.code > .bar > .buttons a.close:hover {
+    color: #A21F2C
+}
+
+.code > .bar > .buttons a.minimize {
+    background: #FAC536;
+    color: #FAC536
+}
+
+.code > .bar > .buttons a.minimize:hover {
+    color: #C28723
+}
+
+.code > .bar > .buttons a.enlarge {
+    background: #39EA49;
+    color: #39EA49
+}
+
+.code > .bar > .buttons a.enlarge:hover {
+    color: #0B7407
+}
+

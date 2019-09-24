@@ -39,9 +39,9 @@ class Console
      */
     public function execute(string $command) : void
     {
-        if(is_null($command) || $command == '') {
+        if (is_null($command) || $command == '') {
             exit;
-        } 
+        }
 
         $commands = explode('&&', urldecode($command));
         foreach ($commands as $offset => $value) {
